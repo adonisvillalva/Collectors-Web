@@ -27,9 +27,9 @@ const Gallery = () => {
     const Card_2 = "Comunidad";
     const Card_3 = "Destacado";
     return (
-        <motion.div variants = {pageVariants} initial = 'hidden' animate = 'show'>
+        <div>
             <Navbar/>
-            <div className = 'gallery'>
+            <motion.div variants = {pageVariants} initial = 'hidden' animate = 'show' className = 'gallery'>
                 <Slider/>
                 <div className = "container">
                     <div className = 'row'>
@@ -41,9 +41,9 @@ const Gallery = () => {
                         <Cards title = {Card_3} path = {Path_1}/>
                     </div>
                 </div> 
-            </div>
+            </motion.div>
             <Footer/>
-        </motion.div>
+        </div>
     )
 }
 

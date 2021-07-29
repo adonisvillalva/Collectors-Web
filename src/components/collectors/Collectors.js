@@ -23,9 +23,9 @@ const pageVariants = {
 const Collectors = () => {
     const Title = "Novedades Collector's";
     return (
-        <motion.div variants = {pageVariants} initial = 'hidden' animate = 'show'>
+        <div >
             <Navbar/>
-            <div className = 'collectors'>
+            <motion.div variants = {pageVariants} initial = 'hidden' animate = 'show' className = 'collectors'>
                 <Slider/>
                 <div className = "container">
                     <div className = 'row'>
@@ -35,9 +35,9 @@ const Collectors = () => {
                         <Posts/>
                     </div>
                 </div> 
-            </div >
+            </motion.div >
             <Footer/>
-        </motion.div>
+        </div>
     )
 }
 

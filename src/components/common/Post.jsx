@@ -37,8 +37,9 @@ const Post = (props) => {
         }).catch((err) => console.log(err));
     }
     return (
-        <motion.div variants = {pageVariants} initial = 'hidden' animate = 'show'>
+        <div>
             <Navbar/>
+            <motion.div  variants = {pageVariants} initial = 'hidden' animate = 'show'>    
             <Slider/>
             <hr className = 'hr-slider'/>
             <div className = 'post container'>   
@@ -48,8 +49,9 @@ const Post = (props) => {
                 <h1>{post.title}</h1>
                 <div className = 'post-content' dangerouslySetInnerHTML={{__html: post.body_1}} ></div>
             </div>
+            </motion.div>
             <Footer/>
-        </motion.div>
+        </div>
     )
 }
 export default Post
