@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+p{
+  text-align: justify;
+  font-size: 1rem;
+}
+
+@import './config/variables';
+@import './config/title';
+@import './config/btn';
+@import './components/home';
+@import './components/navbar';
+@import './components/footer';
+@import './components/slider';
+@import './components/posts';
+@import './components/collectors';
+@import './components/error';
+@import './components/post';
+@import './components/gallery';
+@import './components/imgGallery';
+@import './components/viewImg';

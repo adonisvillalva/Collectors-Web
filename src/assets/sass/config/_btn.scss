@@ -1,0 +1,29 @@
+.hr-title{
+    border-top: 5px solid $blue;
+    opacity: 1;
+}
+.hr-white{
+    border: 0;
+    height: 1px;
+    background: #fff;
+    background-image: linear-gradient(to right, #2f3292, #fff, #2f3292);
+}
+.hr-slider{
+    border-top: 5px solid rgba(33,34,92,1);
+    opacity: 1;
+    margin: 0;
+    box-shadow: px 2px 5px rgba(33,34,92,1);
+}
+.btn-more{
+    text-align: center;
+    color: $blue;
+    font-weight: bold;
+    font-size: 20px;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    &:hover{
+        color: $blue-hover;
+    }
+}

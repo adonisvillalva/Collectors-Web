@@ -1,0 +1,35 @@
+#navbar{
+    position: fixed;
+    z-index: 50;
+    height: 70px;
+    text-align: center;
+    img{
+        margin-top: 5px;
+        height: 60px;
+    }
+}
+.navbar-menu{
+    background-color: $transparent;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    li{
+        display: inline;
+        color: white;
+        padding: .5rem 5rem;
+    }
+}
+.navbar-menu-activate{
+    background-color: $blue;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    li{
+        display: inline;
+        color: white;
+        padding: .5rem 5rem;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+}

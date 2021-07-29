@@ -1,0 +1,17 @@
+.imgGallery{
+    margin-top: 2%;
+    .imgGallery-img{
+        width: 100%;
+        background: $bg;
+        img{
+            width: 100%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+}

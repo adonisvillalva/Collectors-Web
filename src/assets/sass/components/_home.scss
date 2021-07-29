@@ -1,0 +1,75 @@
+/*-----Images Background-----*/
+.home{
+    ul,li{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 100%;
+    }
+    .home-slider{
+        position: relative;
+        li{
+            position: absolute;
+            opacity: 0;
+            -webkit-transition: opacity .5s ease-in;
+            -ms-transition: opacity .5s ease-in;
+            transition: opacity .5s ease-in;
+            &::before{
+                background: $opacity-bg;
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 0;
+                content: "";
+                top: 0;
+                left: 0; 
+            }
+        }
+        img{
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            object-position: top;
+            z-index: 0;
+        }
+    }
+}
+/*-----Menu Logo-----*/
+.home-menu{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    position: absolute;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    .home-logo{
+        text-align: right;
+        img{
+            height: 200px;
+        }
+    }
+}
+/*-----Menu-----*/
+.home-nav{
+    ul{
+        list-style-type: none;
+    }
+    li{
+        color: $grey;
+        text-decoration: none;
+        font-size: 40px;
+        text-transform: uppercase;
+        -webkit-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        transition: all .5s ease;       
+        &:hover{
+            color: $white;
+            text-decoration: none;
+            font-size: 45px;
+        }
+    }
+    
+}

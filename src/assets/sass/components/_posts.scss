@@ -1,0 +1,41 @@
+.posts{
+    div{
+        div{
+            padding: 10px;
+            .posts-card{
+                border: solid 3px $blue;
+                border-radius: 0 0 30px 30px;
+                padding: 10px;
+                h3{
+                    -o-transition: all 0.5s ease;
+                    -moz-transition: all 0.5s ease;
+                    -webkit-transition: all 0.5s ease;
+                    transition: all 0.5s ease;
+                    &:hover{
+                        margin-left: 10%;
+                    }
+                    &::after{
+                        content: "";
+                        display: block;
+                        background-color: $blue;
+                        height: 3px;
+                        width: 50%;
+                        margin: 10px 0 0;
+                    }
+                }
+                img{
+                    max-width: 100%;
+                    -webkit-transition: opacity 500ms;
+                    -moz-transition: opacity 500ms;
+                    -o-transition: opacity 500ms;
+                    -ms-transition: opacity 500ms;
+                    transition: opacity 500ms;
+                    &:hover{
+                        opacity: 0.8;                            
+                    }
+                }
+            }
+        }
+    }
+    
+}
