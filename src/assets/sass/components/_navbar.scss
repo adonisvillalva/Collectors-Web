@@ -1,3 +1,26 @@
+/*-----Media Query-----*/
+@media screen and (min-width: $desktop) {}
+@media screen and (max-width: $laptop) {}
+@media screen and (max-width: $tablet) {}
+@media only screen and (max-width: $mobile) {
+    .navbar-menu{
+        top: 100%;
+        position: relative !important;
+        background-color: $blue !important;
+        text-align: left;
+        ul{
+            padding-top: 50px;
+            background-color: $blue;
+            li{
+                display:block !important;
+                img{
+                    display: none;
+                }
+            }
+        }
+        
+    }
+}
 #navbar{
     position: fixed;
     z-index: 50;

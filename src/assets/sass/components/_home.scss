@@ -1,3 +1,60 @@
+/*-----Media Query-----*/
+@media screen and (max-width: $tablet) {
+    /*-----Images Background-----*/
+    .home-slider{
+        img{
+            
+            object-position: 75% !important;
+            object-fit: cover !important;
+        }
+    }
+    /*-----Menu Logo-----*/
+    .home-menu{
+        .row{
+            display: block !important;
+            .home-logo{
+                text-align: left !important;
+                img{
+                    height: 100px !important;
+                }
+            }
+        }
+    }
+    /*-----Menu-----*/
+    .home-nav{
+        li{
+            font-size: 2rem !important;     
+        } 
+    }
+}
+@media only screen and (max-width: $mobile) {
+    /*-----Images Background-----*/
+    .home-slider{
+        img{
+            
+            object-position: 75% !important;
+            object-fit: cover !important;
+        }
+    }
+    /*-----Menu Logo-----*/
+    .home-menu{
+        .row{
+            display: block !important;
+            .home-logo{
+                text-align: left !important;
+                img{
+                    height: 100px !important;
+                }
+            }
+        }
+    }
+    /*-----Menu-----*/
+    .home-nav{
+        li{
+            font-size: 2rem !important;     
+        } 
+    }
+}
 /*-----Images Background-----*/
 .home{
     ul,li{
@@ -60,7 +117,7 @@
     li{
         color: $grey;
         text-decoration: none;
-        font-size: 40px;
+        font-size: 2.5rem;
         text-transform: uppercase;
         -webkit-transition: all .5s ease;
         -ms-transition: all .5s ease;
@@ -70,6 +127,5 @@
             text-decoration: none;
             font-size: 45px;
         }
-    }
-    
+    } 
 }

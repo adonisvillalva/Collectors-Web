@@ -10,7 +10,6 @@ import Slider_4 from '../../assets/images/banner_04.JPG';
 
 import Nav from './Nav';
 
-
 const pageVariants = {
     hidden: {
         opacity: 0,
