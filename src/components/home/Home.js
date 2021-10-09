@@ -9,6 +9,7 @@ import Slider_3 from '../../assets/images/banner_03.png';
 import Slider_4 from '../../assets/images/banner_04.JPG';
 
 import Nav from './Nav';
+import Advertisements from '../common/Advertisements';
 
 const pageVariants = {
     hidden: {
@@ -89,7 +90,9 @@ const Home = () => {
         }
     }
     return (
+        
         <motion.div variants = {pageVariants} initial = 'hidden' animate = 'show' className = 'home'>
+            <Advertisements/>
             <ul className = "home-slider">
                     <li style = {{opacity: 1}}>
                         <img src = {Slider} alt = 'background_00'/>
@@ -109,10 +112,10 @@ const Home = () => {
                 </ul>
             <div className = 'home-menu container-fluid'>
                 <div className = 'row'>
-                    <motion.div variants = {containerVariants1} initial = 'hidden' animate = 'show' className = 'home-logo col-sm-6'>
+                    <motion.div variants = {containerVariants1} initial = 'hidden' animate = 'show' className = 'home-logo col-6'>
                         <img className = '' src = {Logo} alt = 'logo_collectors'/>
                     </motion.div>
-                    <motion.div variants = {containerVariants} initial = 'hidden' animate = 'show' className = "col-sm-6">
+                    <motion.div variants = {containerVariants} initial = 'hidden' animate = 'show' className = "col-6">
                         <Nav attribute={sliderSelected}/>
                     </motion.div>
                 </div>

@@ -25,24 +25,24 @@ const Navbar = () => {
                         Collector's
                     </li>
                 </Link>
-                <Link to = '/figurefile' style={{ textDecoration: 'none' }}>
+                <Link to = '/gallery' style={{ textDecoration: 'none' }}>
                     <li>
-                        Fichas
+                        Mistery Empire
                     </li>
                 </Link>
-                <Link to = '/'>
+                <Link to = '/' className = 'navbar-logo'>
                     <li>
                         <img src = {Logo} alt = 'logo'/>
-                    </li>
-                </Link>
-                <Link to = '/podcast' style={{ textDecoration: 'none' }}>
-                    <li>
-                        Podcast
                     </li>
                 </Link>
                 <Link to = '/gallery' style={{ textDecoration: 'none' }}>
                     <li>
                         Galería
+                    </li>
+                </Link>
+                <Link to = '/gallery' style={{ textDecoration: 'none' }}>
+                    <li>
+                        Tienda
                     </li>
                 </Link>
             </ul>

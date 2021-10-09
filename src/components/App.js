@@ -13,6 +13,7 @@ function App() {
   return (
     <BrowserRouter>
     <AnimatePresence>
+    
       <Switch>
         <Route exact path = "/" component = {Home}/> 
         <Route exactly path = "/collectors" component = {Collectors}/>
