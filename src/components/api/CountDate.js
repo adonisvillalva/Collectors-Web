@@ -1,5 +1,5 @@
 /*-----Declaración de variables-----*/
-const date = new Date("2021,11,30,12:00:00");
+const date = new Date("2021,12,24,12:00:00");
 export function getDateFinal(){
     const dateFinal = new Date(date - Date.now())
     return dateFinal;
