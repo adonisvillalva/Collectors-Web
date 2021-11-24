@@ -33,7 +33,6 @@
         }
     }
 }
-/*-----Media Query-----*/
 /*---Escritorio---*/
 @include respond (desktop){
     .advertisements_container{
@@ -54,6 +53,7 @@
     position: fixed;
     z-index: 99;
     right: 0;
+    box-shadow: 2px 2px 5px $blue;
     .misteryad_container{
         display: flex;
         align-items: center;

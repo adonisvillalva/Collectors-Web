@@ -1,0 +1,18 @@
+@include respond (desktop){
+    .collectors__container{
+        .collectors__container__page{
+            width: 100%;
+            .collectors__container__page--posts{
+                width: 80%;
+                margin: auto;
+                display: flex;
+                .collectors__container__page--posts--cards{
+                    width: 33.33%;
+                    .collectors__posts{
+
+                    }
+                }
+            }
+        }
+    }
+}

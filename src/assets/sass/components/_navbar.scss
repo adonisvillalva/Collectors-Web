@@ -1,37 +1,238 @@
 /*-----Media Query-----*/
-
-#navbar{
-    position: fixed;
-    z-index: 50;
-    height: 70px;
-    text-align: center;
-    img{
-        margin-top: 5px;
-        height: 60px;
+@include respond (desktop){
+    #navbar__container{
+        position: fixed;
+        z-index: 50;
+        height: 70px;
+        text-align: center;
+        width: 100%;
+        img{
+            margin-top: 5px;
+            height: 60px;
+        }
+        .navbar__container--mobile{
+            display: none;
+        }
     }
-}
-.navbar-menu{
-    background-color: $transparent;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    li{
-        display: inline;
-        color: white;
-        padding: .5rem 5rem;
-    }
-}
-.navbar-menu-activate{
-    background-color: $blue;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    li{
-        display: inline;
-        color: white;
-        padding: .5rem 5rem;
+    .navbar__container--menu{
+        background-color: $transparent;
+        width: 100%;
         transition: all 0.3s ease;
         -webkit-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
+        li{
+            display: inline;
+            color: white;
+            padding: .5rem 5rem;
+        }
     }
+    .navbar-menu-activate{
+        background-color: $blue;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        li{
+            display: inline;
+            color: white;
+            padding: .5rem 5rem;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+        }
+    }
+}
+@include respond (laptop){
+    #navbar__container{
+        position: fixed;
+        z-index: 50;
+        height: 70px;
+        text-align: center;
+        width: 100%;
+        img{
+            margin-top: 5px;
+            height: 60px;
+        }
+        .navbar__container--mobile{
+            display: none;
+        }
+    }
+    .navbar__container--menu{
+        background-color: $transparent;
+        width: 100%;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        li{
+            display: inline;
+            color: white;
+            padding: .5rem 5rem;
+        }
+    }
+    .navbar-menu-activate{
+        background-color: $blue;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        li{
+            display: inline;
+            color: white;
+            padding: .5rem 5rem;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+        }
+    }
+}
+@include respond (laptopLow){
+    #on{
+        opacity: 1;
+        height: 100vh;
+    }
+    #off{
+        opacity: 0;
+        height: 50vh;
+    }
+    #navbar__container{
+        width: 100%;
+        background-color: $blue;
+        height: 45px;
+        .navbar__container--mobile{
+            padding: 5px 10px;
+            position: relative;
+            display: flex;
+            svg{
+                cursor: pointer;
+                color: white;
+                font-size: 35px;
+            }
+            h2{
+                color: white;
+                margin: auto;
+            }
+        }
+        .navbar__container--menu{
+            display: block;
+            position: absolute;
+            padding: 0;
+            background-color: $blue;
+            width: 100%;
+            z-index: 50;
+            top: 45px;
+            transition: all 0.5s linear;
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            li{
+                color: $white;
+                display: block;
+                padding: 15px 0;
+                text-align: center;
+                font-size: 30px;
+            }
+            .navbar__container--logo{
+                display: none;
+            }  
+        }   
+    }    
+}
+@include respond (tablet){
+    #on{
+        opacity: 1;
+        height: 100vh;
+    }
+    #off{
+        opacity: 0;
+        height: 50vh;
+    }
+    #navbar__container{
+        width: 100%;
+        background-color: $blue;
+        height: 45px;
+        .navbar__container--mobile{
+            padding: 5px 10px;
+            position: relative;
+            display: flex;
+            svg{
+                cursor: pointer;
+                color: white;
+                font-size: 35px;
+            }
+            h2{
+                color: white;
+                margin: auto;
+            }
+        }
+        .navbar__container--menu{
+            display: block;
+            position: absolute;
+            padding: 0;
+            background-color: $blue;
+            width: 100%;
+            z-index: 50;
+            top: 45px;
+            transition: all 0.5s linear;
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            li{
+                color: $white;
+                display: block;
+                padding: 15px 0;
+                text-align: center;
+                font-size: 30px;
+            }
+            .navbar__container--logo{
+                display: none;
+            }  
+        }   
+    }    
+}
+@include respond (mobile){
+    #on{
+        opacity: 1;
+        height: 100vh;
+    }
+    #off{
+        opacity: 0;
+        height: 50vh;
+    }
+    #navbar__container{
+        width: 100%;
+        background-color: $blue;
+        height: 45px;
+        .navbar__container--mobile{
+            padding: 5px 10px;
+            position: relative;
+            display: flex;
+            svg{
+                cursor: pointer;
+                color: white;
+                font-size: 35px;
+            }
+            h2{
+                color: white;
+                margin: auto;
+            }
+        }
+        .navbar__container--menu{
+            display: block;
+            position: absolute;
+            padding: 0;
+            background-color: $blue;
+            width: 100%;
+            z-index: 50;
+            top: 45px;
+            transition: all 0.5s linear;
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            li{
+                color: $white;
+                display: block;
+                padding: 15px 0;
+                text-align: center;
+                font-size: 30px;
+            }
+            .navbar__container--logo{
+                display: none;
+            }  
+        }   
+    }    
 }

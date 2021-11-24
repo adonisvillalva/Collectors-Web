@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react';
+import axios from 'axios';
 import {Link} from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -16,6 +17,14 @@ const pageVariants = {
     },
 }
 const NotFoundPage = () => {
+    useEffect(() =>{
+        collectorsPosts();
+    }, []);
+    const collectorsPosts = () =>{
+        axios.get('https://utpl.edu.ec/carreras/servicios/carrerasgeneral.json').then((res) => {
+            console.log("Test"+res.data);
+        }).catch((err) => console.log(err));
+    }
     return (
         <motion.div variants = {pageVariants} initial = 'hidden' animate = 'show' className = "error">
             <p className = "glitch">

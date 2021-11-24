@@ -1,0 +1,30 @@
+.banner__container{
+    background-color: $blue;
+    padding: 5% 0;
+    display: flex;
+    .banner__container__img{
+        width: 50%;
+        img{
+            width: 100%;
+        }
+    }
+    .banner__container__text{
+        width: 50%;
+        padding: 5%;
+        h2,h3{
+            color: $white;
+            font-size: 25px;
+        }
+        h3{
+            font-size: 20px;
+            text-align: justify;
+        }
+        .banner__container__text__count{
+            display: flex;
+            margin-top: 5%;
+            .banner__container__text__count--box{
+                width: 25%;
+            }
+        }
+    }
+}

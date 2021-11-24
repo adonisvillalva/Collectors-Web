@@ -10,7 +10,7 @@
                 transition: opacity .5s ease-in;
             }
             img{
-                object-position: right !important;
+                object-position: top !important;
             }
         }
     }
@@ -52,8 +52,8 @@
                     background-color: $grey !important;
                 }   
                 &:hover{
-                    color: $white;
-                    font-size: 45px;
+                    color: $white !important;
+                    padding-left: 5%;
                 }
             } 
         }
@@ -110,8 +110,8 @@
                     background-color: $grey !important;
                 }    
                 &:hover{
-                    color: $white;
-                    font-size: 45px;
+                    color: $white !important;
+                    padding-left: 5%;
                 }
             } 
         }
@@ -168,8 +168,8 @@
                     background-color: $grey !important;
                 }    
                 &:hover{
-                    color: $white;
-                    font-size: 45px;
+                    color: $white !important;
+                    padding-left: 5%;
                 }
             } 
         }

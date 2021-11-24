@@ -2,11 +2,14 @@
     width: 100%;
     overflow: hidden;
     ul{
-        display: flex;
+        list-style: none;
         padding: 0;
-        width: 200%;
-        animation: change 8s infinite alternate linear;
         margin: 0;
+        // display: flex;
+        // padding: 0;
+        // width: 200%;
+        // animation: change 8s infinite alternate linear;
+        // margin: 0;
     }
     li{
         width: 100%;

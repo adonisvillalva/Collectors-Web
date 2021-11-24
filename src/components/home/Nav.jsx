@@ -10,7 +10,7 @@ const Nav  = ({attribute}) => {
                         Collector's
                     </li>
                 </Link>
-                <Link exact to = '/figurefile' style={{ textDecoration: 'none' }} onMouseOver={() => attribute(2)} onMouseOut={() => attribute(0)}>
+                <Link exact to = '/mistery' style={{ textDecoration: 'none' }} onMouseOver={() => attribute(2)} onMouseOut={() => attribute(0)}>
                     <li>
                         Mistery Empire
                     </li>
