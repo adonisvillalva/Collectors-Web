@@ -12,18 +12,5 @@
                 }
             }
         }
-        .card-body{
-            .card-title{
-                color: $blue;
-                &::after{
-                    content: "";
-                    display: block;
-                    background-color: $blue;
-                    height: 3px;
-                    width: 50%;
-                    margin: 10px 0 0;
-                }
-            }
-        }
     } 
 }

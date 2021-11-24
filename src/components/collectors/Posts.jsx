@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { Card } from 'react-bootstrap';
 import { getCollectors} from '../api/Api'
-import { Link } from 'react-router-dom';
 
 const Posts = () => {
     useEffect(() =>{
@@ -21,7 +20,7 @@ const Posts = () => {
                     posts.map((item) => ((
                         <div className="col-md-4" key={item.nid}>
                             <Card bg="light" border="secondary">
-                                <Card.Link href={`/post/${item.nid}`}  style={{ textDecoration: 'none' }}>
+                                <Card.Link href={`/post/${item.nid}`}>
                                     <Card.Img src = {"http://collectors.enragestudio.com/" + item.field_post_img}/>
                                 </Card.Link>
                                 <Card.Body>

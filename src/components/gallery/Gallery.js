@@ -25,7 +25,6 @@ const Gallery = () => {
     const Card_1 = "Collector's";
     const Path_1 = "/api/gallery?_format=json";
     const Card_2 = "Comunidad";
-    const Card_3 = "Destacado";
     return (
         <div>
             <Navbar/>
@@ -35,10 +34,9 @@ const Gallery = () => {
                     <div className = 'row'>
                         <TitlePage attribute = {Title}/>
                     </div>
-                    <div className = 'content row'>
+                    <div className = 'row'>
                         <Cards title = {Card_1} path = {Path_1}/>
                         <Cards title = {Card_2} path = {Path_1}/>
-                        <Cards title = {Card_3} path = {Path_1}/>
                     </div>
                 </div> 
             </motion.div>

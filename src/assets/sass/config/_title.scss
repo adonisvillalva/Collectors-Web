@@ -5,3 +5,14 @@ h1, h2{
 h3, h4, h5{
     color: $blue;
 }
+.card-title{
+    color: $blue;
+    &::after{
+        content: "";
+        display: block;
+        background-color: $blue;
+        height: 3px;
+        width: 50%;
+        margin: 10px 0 0;
+    }
+}

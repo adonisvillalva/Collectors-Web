@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-
+import { Card } from 'react-bootstrap';
 import {getCollectors} from '../api/Api';
 
 const pageVariants = {
@@ -19,27 +18,32 @@ const pageVariants = {
 }
 const Cards = ({title, path}) => {
     useEffect(() =>{
-        fetchCollectors();
+        collectorsGallery();
     }, []);
     const [items, setItems] = useState([]);
     const [img, setImg] = useState([]);
-    const fetchCollectors = async () => {
+    const collectorsGallery = () => {
         getCollectors(path).then((res) => {
             setImg(res.data);
             setItems(res.data[img.length]);
         }).catch((err) => console.log(err));
     }   
     return (
-        <motion.div variants = {pageVariants} initial = 'hidden' animate = 'show' className = 'col-sm-4'>
+        <motion.div variants = {pageVariants} initial = 'hidden' animate = 'show' className = 'col-md-6'>
             <div className = 'row'>
-                <div className = 'gallery-cards'>
-                    <Link to={`/media/${"collectors"}`}>
-                        <div className = 'gallery-title'>
-                            <h2>{title}</h2>
-                        </div>
-                        <img src = {"http://collectors.enragestudio.com/" + items.image} alt = 'img_gallery'/>
-                    </Link>
-                </div>
+                <Card border="light" bg="light">
+                    <Card.Body>
+                        <Card.Title>
+                            {title}
+                        </Card.Title>
+                        <Card.Link href={`/media/${title}`} className="btn-more">
+                            Entrar a la galería de {title}
+                        </Card.Link>
+                    </Card.Body>
+                    <Card.Link href={`/media/${title}`}> 
+                        <Card.Img src = {"http://collectors.enragestudio.com/" + items.image} alt = 'img_gallery'/>
+                    </Card.Link>  
+                </Card>
             </div>
         </motion.div>
     )

@@ -21,6 +21,7 @@ Si deseas ver el portal puedes visitar: [Collector's empire](www.collectors-empi
 
 -   v1.1.1  -   Proyecto con maquetación inicial, estructura completa, renderizado de las APIs.
 -   v1.1.2  -   Página inicial Home completo, más contador para límite de tiempo Mistery Empire. Diseño responsivo completo.
--   v1.2.1  -   Implementación y uso de boostrap, completo el móduilo de Posts
+-   v1.2.1  -   Implementación y uso de boostrap, completo el móduilo de Posts.
+-   v1.2.2  -   Reestructuración de la galería de Collectors.
 
 

@@ -1,30 +1,16 @@
-.gallery-cards{
-    position: relative;
-    display: inline-block;
-    .gallery-title{
-        background: $opacity-bg;
-        transition: all 0.3s ease;
-        -webkit-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-        width: 94%;
-        height: 100%;
-        position: absolute;
-        border-radius: 0 0 30px 30px;
-        h2{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            opacity: 1;
-            color: $white;
-        }
-        &:hover{
-            opacity: 0;
-        }
-    }
-    img{
+.gallery{
+    .card{
         width: 100%;
-        border: 2px solid $blue;
-        border-radius: 0 0 30px 30px;
+        padding: 0;
+        .card-img{
+            -webkit-transition: opacity 500ms;
+            -moz-transition: opacity 500ms;
+            -o-transition: opacity 500ms;
+            -ms-transition: opacity 500ms;
+            transition: opacity 500ms;
+            &:hover{
+                opacity: 0.8;                            
+            }
+        }
     }
 }

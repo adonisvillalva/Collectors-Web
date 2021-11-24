@@ -51,7 +51,7 @@ const ImgGallery = () => {
                     <div className = 'row'>
                     {
                         items.map((item) => (
-                            <div className = 'col-4'>
+                            <div className = 'col-md-4'>
                                 <div className = 'imgGallery-img'>
                                     <img src = {"http://collectors.enragestudio.com/" + item.image} onClick = {() => activeView(item.image)}/>
                                 </div>
