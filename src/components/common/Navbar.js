@@ -39,9 +39,9 @@ const Navbar = (props) => {
                             Collector's
                         </li>
                     </Link>
-                    <Link to = '/mistery' style={{ textDecoration: 'none' }}>
+                    <Link to = '/unavailable' style={{ textDecoration: 'none' }}>
                         <li>
-                            Mistery Empire
+                            Taller
                         </li>
                     </Link>
                     <Link to = '/' className = 'navbar__container--logo'>
@@ -49,12 +49,12 @@ const Navbar = (props) => {
                             <img src = {Logo} alt = 'logo'/>
                         </li>
                     </Link>
-                    <Link to = '/gallery' style={{ textDecoration: 'none' }}>
+                    <Link to = '/unavailable' style={{ textDecoration: 'none' }}>
                         <li>
-                            Galería
+                            Comunidad
                         </li>
                     </Link>
-                    <Link to = '/gallery' style={{ textDecoration: 'none' }}>
+                    <Link to = '/unavailable' style={{ textDecoration: 'none' }}>
                         <li>
                             Tienda
                         </li>

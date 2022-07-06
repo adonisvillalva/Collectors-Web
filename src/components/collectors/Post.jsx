@@ -25,12 +25,12 @@ const Post = (props) => {
         collectorsPost();
     }, []);
     const [post, setPost] = useState([]);
-    const path = '/api/collectors?_format=json';
+    const path = '/collectors?_format=json';
     const collectorsPost = () =>{
         getCollectors(path).then((res) => {
             const postScearch = res.data.map(x =>{
                 const nid = props.match.params.nid;
-                if(x.nid == nid){
+                if(x.title === nid){
                     setPost(x)
                 }
             })
@@ -44,10 +44,14 @@ const Post = (props) => {
             <hr className = 'hr-slider'/>
             <div className = 'post container'>   
                 <center>
-                    <img className = 'img-post' src = {"http://collectors.enragestudio.com/" + post.field_post_img}/>
+                    <img className = 'img-post' src = {"http://api.collectors-empire.com/" + post.image}/>
                 </center>
-                <h1>{post.title}</h1>
-                <div className = 'post-content' dangerouslySetInnerHTML={{__html: post.body_1}} ></div>
+                <div className='row'>
+                    <div className='col-xs-12'>
+                        <h1>{post.title}</h1>
+                        <div className = 'post-content' dangerouslySetInnerHTML={{__html: post.body}} ></div>
+                    </div>
+                </div>
             </div>
             </motion.div>
             <Footer/>

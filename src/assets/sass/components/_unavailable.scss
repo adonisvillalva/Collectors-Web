@@ -1,0 +1,15 @@
+.unavailable{
+    .top{
+        height: 70px;
+        background-color: $blue;
+        width: 100%;
+        position: fixed;
+    }
+    .info{
+        padding-top: 100px;
+        .progress{
+            width: 60%;
+            margin: auto;
+        }
+    }
+}

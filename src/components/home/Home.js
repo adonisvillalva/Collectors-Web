@@ -92,7 +92,7 @@ const Home = () => {
     return (
         
         <motion.div variants = {pageVariants} initial = 'hidden' animate = 'show' className = 'home'>
-            <Advertisements/>
+            {/* <Advertisements/> */}
             <ul className = "home-slider">
                     <li style = {{opacity: 1}}>
                         <img src = {Slider} alt = 'background_00'/>

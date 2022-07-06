@@ -1,43 +1,221 @@
-.post{
-    position: relative;
-    margin-top: -100px;
-    h1{
-        margin-top: 3.125rem;
-        margin-bottom: 3.125rem;
-    }
-    h3{
-        text-decoration: underline;
-    }
-    h4{
-        text-align: center;
-        &::after{
-            content: "";
-            display: block;
-            background-color: $blue;
-            height: 3px;
-            width: 20%;
-            margin: 10px 40% 0;
+/*-----Media Query-----*/
+@include respond (desktop){
+    .post{
+        position: relative;
+        margin-top: -100px;
+        h1{
+            margin-top: 3.125rem;
+            margin-bottom: 3.125rem;
+        }
+        h3{
+            text-decoration: underline;
+        }
+        h4{
+            text-align: center;
+            &::after{
+                content: "";
+                display: block;
+                background-color: $blue;
+                height: 3px;
+                width: 20%;
+                margin: 10px 40% 0;
+            }
+        }
+        .img-post{
+            max-width: 500px;
+            border: solid 5px rgba(33,34,92,1);
+            align-self: center;
+        }
+        .post-content{
+            img{
+                width:100%;
+                height: auto;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .tags{
+            text-align: right;
+        }
+        ul li{
+            list-style-type: square;
         }
     }
-    .img-post{
-        max-width: 500px;
-        border-radius: 30px;
-        border: solid 5px rgba(33,34,92,1);
-        align-self: center;
-    }
-    .post-content{
-        img{
-            width: 40%;
-            height: auto;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+}
+@include respond (laptop){
+    .post{
+        position: relative;
+        margin: -100px 10% 0 10%;
+        h1{
+            margin-top: 3.125rem;
+            margin-bottom: 3.125rem;
+        }
+        h3{
+            text-decoration: underline;
+        }
+        h4{
+            text-align: center;
+            &::after{
+                content: "";
+                display: block;
+                background-color: $blue;
+                height: 3px;
+                width: 20%;
+                margin: 10px 40% 0;
+            }
+        }
+        .img-post{
+            max-width: 500px;
+            border: solid 5px rgba(33,34,92,1);
+            align-self: center;
+        }
+        .post-content{
+            img{
+                width:100%;
+                height: auto;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .tags{
+            text-align: right;
+        }
+        ul li{
+            list-style-type: square;
         }
     }
-    .tags{
-        text-align: right;
+}
+@include respond (laptopLow){
+    .post{
+        position: relative;
+        margin: 25px 10% 0 10%;
+        h1{
+            margin-top: 3.125rem;
+            margin-bottom: 3.125rem;
+        }
+        h3{
+            text-decoration: underline;
+        }
+        h4{
+            text-align: center;
+            &::after{
+                content: "";
+                display: block;
+                background-color: $blue;
+                height: 3px;
+                width: 20%;
+                margin: 10px 40% 0;
+            }
+        }
+        .img-post{
+            max-width: 500px;
+            border: solid 5px rgba(33,34,92,1);
+            align-self: center;
+        }
+        .post-content{
+            img{
+                width:100%;
+                height: auto;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .tags{
+            text-align: right;
+        }
+        ul li{
+            list-style-type: square;
+        }
+    }   
+}
+@include respond (tablet){
+    .post{
+        position: relative;
+        margin: 25px 10% 0 10%;
+        h1{
+            margin-top: 3.125rem;
+            margin-bottom: 3.125rem;
+        }
+        h3{
+            text-decoration: underline;
+        }
+        h4{
+            text-align: center;
+            &::after{
+                content: "";
+                display: block;
+                background-color: $blue;
+                height: 3px;
+                width: 20%;
+                margin: 10px 40% 0;
+            }
+        }
+        .img-post{
+            max-width: 250px;
+            border: solid 5px rgba(33,34,92,1);
+            align-self: center;
+        }
+        .post-content{
+            img{
+                width:100%;
+                height: auto;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .tags{
+            text-align: right;
+        }
+        ul li{
+            list-style-type: square;
+        }
     }
-    ul li{
-        list-style-type: square;
-    }
+}
+@include respond (mobile){
+    .post{
+        position: relative;
+        margin-top: 25px;
+        h1{
+            margin-top: 3.125rem;
+            margin-bottom: 3.125rem;
+        }
+        h3{
+            text-decoration: underline;
+        }
+        h4{
+            text-align: center;
+            &::after{
+                content: "";
+                display: block;
+                background-color: $blue;
+                height: 3px;
+                width: 20%;
+                margin: 10px 40% 0;
+            }
+        }
+        .img-post{
+            max-width: 200px;
+            border: solid 5px rgba(33,34,92,1);
+            align-self: center;
+        }
+        .post-content{
+            img{
+                width:100%;
+                height: auto;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .tags{
+            text-align: right;
+        }
+        ul li{
+            list-style-type: square;
+        }
+    } 
 }

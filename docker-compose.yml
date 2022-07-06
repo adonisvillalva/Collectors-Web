@@ -1,0 +1,23 @@
+version: '3.3'
+
+services:
+  httpd:
+    image: httpd:2.4 
+    container_name: collectors_web
+    restart: always
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
+    ports:
+      - 80
+      #- 443
+    volumes:
+      #- ./vhosts/test.conf:/usr/local/apache2/conf/httpd.conf
+      - ./build:/usr/local/apache2/htdocs/
+    environment:
+      VIRTUAL_HOST: collectors-empire.com
+
+networks:
+  default:
+    external:
+      name: nginx-proxy

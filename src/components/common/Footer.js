@@ -30,7 +30,7 @@ function Footer() {
                             </a>   
                         </li>
                         <li className = 'network'>
-                            <a className = 'inst' target = '_blank' href = 'https://www.facebook.com/col.empire'>
+                            <a className = 'inst' target = '_blank' href = 'https://www.instagram.com/col.empire/'>
                                 <FontAwesomeIcon icon = {faInstagram}/>Instagram
                             </a>
                         </li>
@@ -56,7 +56,7 @@ function Footer() {
             </div>
             <div className = 'row'>
                 <div className = 'col-sm-6'>
-                    <p>Copyright 2021 | <strong>Collector's Empire</strong></p>
+                    <p>Copyright 2022 | <strong>Collector's Empire</strong></p>
                 </div>
                 <div className = 'copyright col-sm-6'>
                     <p>Desarrollador por <strong><a target = '_blank' href = 'http://www.enragestudio.com/'>Enrage Studio</a></strong></p>

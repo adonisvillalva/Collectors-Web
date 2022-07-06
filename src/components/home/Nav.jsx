@@ -10,17 +10,17 @@ const Nav  = ({attribute}) => {
                         Collector's
                     </li>
                 </Link>
-                <Link exact to = '/test' style={{ textDecoration: 'none' }} onMouseOver={() => attribute(2)} onMouseOut={() => attribute(0)}>
+                <Link exact to = '/unavailable' style={{ textDecoration: 'none' }} onMouseOver={() => attribute(2)} onMouseOut={() => attribute(0)}>
                     <li>
-                        Mistery Empire
+                        Taller
                     </li>
                 </Link>
-                <Link exact to = '/gallery' style={{ textDecoration: 'none' }} onMouseOver={() => attribute(4)} onMouseOut={() => attribute(0)}>
+                <Link exact to = '/unavailable' style={{ textDecoration: 'none' }} onMouseOver={() => attribute(4)} onMouseOut={() => attribute(0)}>
                     <li>
-                        Galería
+                        Comunidad
                     </li>
                 </Link>
-                <Link exact to = '/test' style={{ textDecoration: 'none' }} onMouseOver={() => attribute(4)} onMouseOut={() => attribute(0)}>
+                <Link exact to = '/unavailable' style={{ textDecoration: 'none' }} onMouseOver={() => attribute(4)} onMouseOut={() => attribute(0)}>
                     <li>
                         Tienda
                     </li>
