@@ -44,7 +44,7 @@ const Post = (props) => {
             <hr className = 'hr-slider'/>
             <div className = 'post container'>   
                 <center>
-                    <img className = 'img-post' src = {"http://api.collectors-empire.com/" + post.image}/>
+                    <img className = 'img-post' src = {"https://api.collectors-empire.com/" + post.image}/>
                 </center>
                 <div className='row'>
                     <div className='col-xs-12'>
