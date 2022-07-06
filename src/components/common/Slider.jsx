@@ -13,7 +13,6 @@ const Slider = () => {
         const data = await fetch("https://api.collectors-empire.com/slider?_format=json", requestOptions);
         const items = await data.json();
         setItems(items);
-        console.log(items);
     }
     return(
         <div className = "slider">
